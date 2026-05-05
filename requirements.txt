@@ -1,0 +1,6 @@
+ultralytics
+opencv-python
+requests
+
+# use esse código para baixar as bibliotecas acima
+# pip install -r requirements.txt
