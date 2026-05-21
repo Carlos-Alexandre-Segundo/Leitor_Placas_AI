@@ -3,7 +3,7 @@ from ultralytics import YOLO
 model = YOLO('yolov8n.pt')
 
 results = model.train(
-    data='C:/Users/carlos.segundo/source/workspace/Python couser/Brazil-Plates-Detector-1',
+    data='YOUR_FILE_ROUTING',
     epochs=30,
     imgsz=640,
     batch=16,

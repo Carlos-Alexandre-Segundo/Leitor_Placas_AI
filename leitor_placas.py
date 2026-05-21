@@ -5,13 +5,13 @@ import re
 
 # ================== CONFIGURAÇÕES ==================
 
-API_BASE_URL = "http://10.1.93.36:5119/api/oficina/"
-API_ENTRY = f"{API_BASE_URL}entrada"
+API_BASE_URL = "SUA_API_DE_BASE"
+API_ENTRY = f"{API_BASE_URL}SUA_URL"
 
-PLATE_RECOGNIZER_TOKEN = "511bbb1efabebb18e7d019980a9b00c3ce85fac0"
+PLATE_RECOGNIZER_TOKEN = "SEU_TOKEN_PESSOAL"
 
 modelo_yolo = YOLO(
-    r'C:\Users\carlos.segundo\source\workspace\Python couser\runs\detect\train-3\weights\best.pt'
+    'SEU_CAMINHO_PARA_O_YOLO'
 )
 
 BOTAO_CAPTURAR = {
@@ -141,7 +141,7 @@ def extrair_texto_placa(recorte):
 
     with open(caminho_temp, 'rb') as imagem:
         response = requests.post(
-            'https://api.platerecognizer.com/v1/plate-reader/',
+            'ACESS_PLATE_RECOGNIZER',
             files={'upload': imagem},
             headers={
                 'Authorization': f'Token {PLATE_RECOGNIZER_TOKEN}'

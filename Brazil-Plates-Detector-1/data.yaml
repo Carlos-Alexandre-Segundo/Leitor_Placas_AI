@@ -5,7 +5,7 @@ nc: 2
 roboflow:
   license: CC BY 4.0
   project: brazil-plates-detector
-  url: https://universe.roboflow.com/brazilplatedetector/brazil-plates-detector/dataset/1
+  url: url_to_train_your_yolo
   version: 1
   workspace: brazilplatedetector
 test: ../test/images

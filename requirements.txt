@@ -2,5 +2,5 @@ ultralytics
 opencv-python
 requests
 
-# use esse código para baixar as bibliotecas acima
+# use this code on terminal to download the library above
 # pip install -r requirements.txt
